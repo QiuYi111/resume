@@ -1,0 +1,49 @@
+title: 简历
+name: 邱璟祎
+jobtitle: 清华大学在读
+contact:
+  - icon: fa-envelope
+    text: qiuyi200311@gmail.com
+  - icon: fa-phone-square
+    text: +86 18810986551
+  - icon: fa-globe
+    text: Blog
+    link: https://qiuyi111.github.io/
+education:
+  - university: 曲靖市第一中学
+    duration: 2019年9月 - 2022年6月
+    location: 云南省曲靖市
+    major: 高考理科710分
+  - university: 清华大学
+    duration:  2022年9月-至今
+    location: 北京市
+    major: 机械工程实验班
+  - university: 荷兰代尔夫特理工大学交换
+    duration:  2024年8月-2025年2月
+    location: 荷兰南荷兰省代尔夫特
+    major: Mechanical Engineering
+skills:
+  - title: 专业知识融汇贯通
+    items: 理论力学，机械设计理论，流体力学，传热学等
+  - title: 熟练掌握机械设计软件
+    items: Solidworks，AutoCAD，AutoCAD Fusion 
+  - title: 具备计算机编程能力
+    items: C++, Python
+  - title: 熟练掌握仿真工具
+    items: Matlab
+  - title: 熟练掌握生成式AI工具
+    items: Stable Diffusion，Suno，Chatgpt
+experience:
+  - title: 实习/
+    duration: Apr 2016 - Now
+    company: Your 1st, Inc.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+projects:
+  - name: SRT 外骨骼研究
+    description: 通过对前沿学术论文的广泛阅读学习，我提高了对行业前沿的理解，认识到目前行业主要痛点是续航能力与运动能力的平衡，主要难点是步态模拟的准确快速。我基于此提出利用AI技术，广泛采集真人步态数据用于训练，实现步态仿真和行动预测，为提高外骨骼使用者灵活性提供了解决方案。同时，为了提高工作效率，率先向课题组介绍AutoGPT等生成式AI工具，优化工作流。
+    contribution: 项目负责人
+languages:
+  - name: 普通话
+    proficiency: 母语
+  - name: 英语
+    proficiency: 托福 100+，工作熟练
