@@ -66,21 +66,26 @@ layout: default
         </div>
       </section>
 
-      <section id="experience">
+      <section id="internships">
         <div class="section-title">
-          工作经历
+          实习经历
         </div>
         <div class="section-content">
-          {% for exp in site.data.resume_zhcn.experience %}
+          {% for internship in site.data.resume_zhcn.internships %}
           <div class="block">
             <div class="block-title">
-              {{ exp.title }}
+              {{ internship.name }}
             </div>
             <div class="block-subtitle">
-              {{ exp.duration }} | {{ exp.company }}
+              {{ internship.role }} | {{ internship.duration }}
             </div>
             <div class="block-content">
-              {{ exp.description }}
+              <ul>
+              {% for item in internship.description %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              </ul>
+              <br>{{ internship.contribution }}
             </div>
           </div>
           {% endfor %}
