@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "project_name": "jekyll-minimal-resume",
+    "type": "Jekyll Theme",
+    "generated": "2026-02-02",
+    "tech_stack": ["Ruby", "Liquid", "HTML", "CSS", "SASS"]
+  },
+  "structure": {
+    "data_source": "_data/*.yml",
+    "templates": "_layouts/*.html",
+    "components": "_includes/*.html",
+    "styles": ["_sass/*.scss", "assets/css/*.css"],
+    "output": "_site/"
+  },
+  "entry_points": {
+    "main": "index.html",
+    "english": "resume.html",
+    "chinese": "resume_zh-CN.html",
+    "data_english": "_data/resume.yml",
+    "data_chinese": "_data/resume_zhcn.yml"
+  },
+  "data_schema": {
+    "fields": [
+      "name",
+      "jobtitle",
+      "contact",
+      "education",
+      "skills",
+      "experience",
+      "projects",
+      "languages"
+    ],
+    "contact_structure": {
+      "icon": "FontAwesome class (fa-*)",
+      "text": "Display text",
+      "link": "Optional URL"
+    },
+    "repeatable_blocks": [
+      "education",
+      "skills",
+      "experience",
+      "projects",
+      "languages"
+    ]
+  },
+  "configs": {
+    "standard": "_config.yml",
+    "gem_dev": "_config_gem.yml",
+    "colorful": "_config_colorful.yml",
+    "key_params": {
+      "baseurl": "Deployment path",
+      "theme": "jekyll-theme-minimal-resume",
+      "color": "gray/red/blue/green/teal/nord/etc"
+    }
+  },
+  "commands": {
+    "serve": "bundle exec jekyll serve",
+    "serve_gem": "rake sg",
+    "serve_colorful": "rake sc",
+    "build": "bundle exec jekyll build"
+  },
+  "dependencies": {
+    "jekyll": "Static site generator",
+    "jekyll-theme-minimal-resume": "Theme gem",
+    "fontawesome": "Embedded icon library"
+  },
+  "color_schemes": [
+    "gray", "red", "pink", "grape", "violet",
+    "indigo", "blue", "cyan", "teal", "green",
+    "lime", "yellow", "orange", "nord"
+  ],
+  "features": {
+    "pdf_export": "Browser print (CSS optimized)",
+    "multilingual": "Dual templates (EN/CN)",
+    "responsive": "Mobile + Desktop",
+    "hexo_port": "/port-hexo/",
+    "github_pages": "Native support"
+  },
+  "extension_pattern": {
+    "step1": "Add data to _data/resume.yml",
+    "step2": "Add <section> to _layouts/resume.html",
+    "step3": "Loop with {% for item in site.data.resume.X %}"
+  },
+  "current_user_data": {
+    "name": "邱璟祎",
+    "university": "清华大学",
+    "major": "机械工程实验班",
+    "exchange": "荷兰代尔夫特理工大学",
+    "projects": [
+      "SRT外骨骼研究",
+      "强化学习加密货币交易模型",
+      "LSTM股票价格预测",
+      "AI音乐剧《李白》"
+    ],
+    "skills": [
+      "SolidWorks",
+      "AutoCAD",
+      "C++",
+      "Python",
+      "Matlab",
+      "Stable Diffusion",
+      "Suno",
+      "ChatGPT"
+    ]
+  },
+  "hot_files": [
+    "_data/resume_zhcn.yml",
+    "_sass/*.scss",
+    "_layouts/resume_zh_cn.html",
+    "_config.yml"
+  ],
+  "ignore_patterns": [
+    "_site/",
+    ".sass-cache/",
+    "*.gem"
+  ]
+}

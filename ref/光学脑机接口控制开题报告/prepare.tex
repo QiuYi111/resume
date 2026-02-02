@@ -1,0 +1,112 @@
+\chapter{预研工作与系统搭建}
+在本项目正式实施前，已在实验室前期研究的基础上，完成了核心硬件平台的搭建与关键部件的工程优化。这些预研工作为实现高分辨率神经成像与稳定的行为实验提供了必要的硬件支撑。
+
+\section{双光子成像系统的搭建与光路调试}
+
+针对单神经元分辨率的实时观测需求，搭建并调试了一套高集成度的双光子扫描成像系统。该系统不仅满足了基础的荧光信号采集需求，还在光机结构设计上进行了针对性创新。
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/2p-system.png}
+    \caption{双光子显微镜系统渲染图}
+    \label{fig:my_label}
+\end{figure}
+\textbf{系统特征与功能集成}  
+本项目所搭建的双光子系统具备高度紧凑的结构特征，极大地节省了实验台架空间。系统实现了单光子宽视场与双光子精密扫描的耦合同步成像：在实验初期利用单光子路径进行快速选区与神经元定位，随后无缝切换至双光子路径进行高分辨率的功能成像。这种双模态设计显著提升了实验中寻找目标细胞的效率。
+
+\paragraph{关键部件优化}  
+振镜系统是双光子扫描的核心物理单元，其调节精度直接决定了成像质量。在预研阶段，针对传统振镜架调节自由度高度耦合、维护困难的痛点，对其进行了重新设计。
+\begin{itemize}
+    \item \textbf{参数固化与模块化}：通过精密加工确保了振镜电机的安装中心高度与入射距离等参数固化，减少了重复校准的需求。
+    \item \textbf{解耦调节机制}：新设计的架体允许在不影响其余元件的情况下，独立拆卸调节特定元件。这种学上的解耦设计，将原本繁琐的光路校准时间明显缩短。
+    \item \textbf{高刚性设计}：采用不锈钢加工，增强了高速扫描过程中的结构阻尼，有效抑制了机械振动对成像信噪比的影响。
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/galvo-box.png}
+    \caption{模块化振镜架渲染图}
+    \label{fig:galvo_mount}
+\end{figure}
+
+\textbf{3. 光路调试与验证结果}  
+在完成系统集成后，通过多轮光束质量诊断、扫描线性度测试与波前校准，对整体光路性能进行了系统验证。测试结果表明，该成像系统在工作条件下可实现近衍射极限的性能，并能够在小鼠皮层获得清晰的神经元胞体结构图像。系统在空间分辨率与时间稳定性方面均满足后续海马体神经流形解码与闭环行为实验对成像带宽的需求。
+
+\section{空间认知行为测试装置的搭建}
+
+为实现小鼠在头部固定状态下的虚拟导航行为，本项目构建了一套基于气浮球原理的空间认知行为测试装置。该装置通过气膜托举实现球体的近无摩擦悬浮，其核心工程挑战在于：在高通量供气条件下抑制扰动，从而确保球体运动的平稳性与可控性，同时还需要尽可能减小振动和噪音，防止影响小鼠实验。
+
+\subsection{流体力学计算}
+
+\paragraph{（1）托举力学模型与设计压差计算}
+系统物理参数设定如下：球体半径 $R = 75\,\mathrm{mm}$，质量 $m \approx 40\,\mathrm{g}$，气托半顶角 $\theta = 45^\circ$，设计气膜厚度 $h \approx 0.3\,\mathrm{mm}$。气托有效托举面积可表示为
+\begin{equation}
+    A_{eff} = \pi (R \sin \theta)^2 \approx 8.83 \times 10^{-3}\,\mathrm{m}^2 .
+\end{equation}
+在静态受力平衡条件 $F_{lift}=mg$ 下，所需最小平均托举压差为
+\begin{equation}
+    \Delta P_{req} \approx 44.4\,\mathrm{Pa}.
+\end{equation}
+考虑运动过程中的扰动，引入安全系数 $k=3$，设计目标静压设定为 $\Delta P_{target} \approx 150\,\mathrm{Pa}$。基于该压差需求对泄流面积与风扇流量进行反推，所选双反转风扇具备充足的压力与流量冗余。
+
+\paragraph{（2）初始结构的失效模式：侧吹射流引发的非对称力矩}
+在初始设计中，风扇采用侧向水平进气并接入空腔静压箱。CFD 仿真结果表明，风扇出口高速气流在有限腔体深度内形成明显的射流，局部动压在壁面处转化为静压，导致底部气压分布出现横向梯度 $\partial P/\partial x \neq 0$。该压力不均匀性在球体底部引入非零切向力矩
+\begin{equation}
+    \tau = \int \vec{r} \times (\vec{F}_{shear} + \vec{F}_{pressure})\,\mathrm{d}A \neq 0 ,
+\end{equation}
+从而诱发球体自激振动并破坏悬浮稳定性。
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/no-sp-particals.png}
+        \caption{射流主导下的气流粒子轨迹分布}
+        \label{fig:no_sponge_particles}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/no-sponge-pressure.png}
+        \caption{对应剖面内的气压分布}
+        \label{fig:no_sponge_pressure}
+    \end{subfigure}
+    \caption{未引入多孔介质时静压箱内的射流效应仿真结果}
+    \label{fig:no_sponge_cfd}
+\end{figure}
+
+\paragraph{（3）优化方案：基于多孔介质的动量耗散与均流}
+针对上述失效机制，在静压箱内部引入多孔介质整流层以耗散高速射流动量。气流在多孔介质中由达西渗流机制主导，其压降关系可表示为
+\begin{equation}
+    \nabla P = - \left(\frac{\mu}{K} \vec{v} + C_2 \frac{1}{2} \rho |\vec{v}| \vec{v}\right).
+\end{equation}
+该结构有效将动压主导的射流流场转化为近各向同性的静压渗透场，从源头上消除了切向力矩的产生。实验结果表明，在引入多孔介质后，系统仅需约 $1/3$ 额定功率即可实现球体稳定悬浮，进动现象完全消失。
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/particles.png}
+        \caption{多孔介质作用下的气流粒子轨迹分布}
+        \label{fig:sponge_particles}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/pressure.png}
+        \caption{对应剖面内的近各向同性气压分布}
+        \label{fig:sponge_pressure}
+    \end{subfigure}
+    \caption{引入多孔介质后静压箱内流场与压力场的均匀化效果}
+    \label{fig:sponge_cfd}
+\end{figure}
+
+\subsection{机械结构设计与系统拓展性}
+
+气浮球装置底座采用模块化型材构建，并在球体周边及基座区域预留标准化接口，以满足脑机接口实验中对摄像头、光学传感器及机械臂等模块的快速部署与调优需求。气托碗采用 3D 打印树脂材料制造，并通过表面处理降低启动摩擦，使小鼠能够以极小的施力驱动球体转动，从而保证行为输入的自然性与灵敏性。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/new-jetball.png}
+    \caption{空间认知行为测试系统总体结构示意图。系统以气浮球装置为核心，
+    集成均流静压箱与模块化支撑结构，为头部固定条件下的小鼠虚拟导航行为实验提供稳定平台。}
+    \label{fig:jetball_system}
+\end{figure}
+

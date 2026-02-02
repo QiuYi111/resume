@@ -29,13 +29,13 @@ education:
 
 skills:
   - title: 硬件与机械设计
-    items: "SolidWorks, AutoCAD, Fusion 360, 双光子显微成像系统, 机械臂控制, Harp硬件同步系统, 嵌入式开发"
+    items: "SolidWorks, AutoCAD, Fusion 360, 双光子显微成像系统, 机械臂控制, Harp硬件同步系统, 嵌入式开发, Min-Jerk轨迹规划"
   - title: AI与算法
-    items: "Python, C++, TensorFlow, PyTorch, CEBRA神经表示学习, 强化学习策略网络, LSTM深度学习, Stable Diffusion, Suno AI"
+    items: "Python, C++, TensorFlow, PyTorch, CEBRA神经表示学习, 神经流形分析, 强化学习策略网络, LSTM深度学习, 贝叶斯推断框架, Stable Diffusion, Suno AI"
   - title: 全栈开发
-    items: "React 18.3.1, TypeScript, Vite, Electron, FastAPI, SQLite, FFmpeg, Tailwind CSS, Figma设计"
+    items: "React 18.2.0, TypeScript 5.4.5, Vite 5.4.1, Electron, FastAPI, SQLite, Framer Motion 11.11.11, Zustand 4.5.5, FFmpeg, Tailwind CSS, Figma设计"
   - title: 神经科学实验
-    items: "光学脑机接口, 双光子钙成像, 神经信号处理, 虚拟现实系统, Bonsai实时框架"
+    items: "光学脑机接口, 双光子钙成像, 神经信号处理, 海马体目标态解码, 虚拟现实系统, Bonsai实时框架, 分阶段塑形策略"
 
 internships:
   - name: 京东探索研究院
@@ -65,16 +65,17 @@ projects:
       - "开发实时钙信号提取组件：运动校正、荧光信号提取、钙信号解卷积，解决30-60Hz钙信号动力学与1kHz机械臂控制的时间尺度匹配问题"
       - "基于Bonsai框架集成实时信号流处理，使用Harp硬件套件实现气浮球、奖励给水、VR帧的时钟同步"
       - "采用分阶段塑形策略：虚拟光标导航 → 目标物尺度缩小 → 机械臂具身控制，实现从认知目标态到物理空间的映射呈现"
+      - "引入Min-Jerk（最小跳跃）轨迹规划算法，实现生物运动模式平滑过渡，提升机械臂运动预测性和用户体验"
     contribution: "独立研究 | 导师: 张元龙助理教授 (清华大学生命科学学院)"
 
   - name: 小忆 AI 眼镜 (MineContext Glass)
     duration: 2024年10月 - 至今
     description:
-      - "基于Electron框架开发本地优先的AI视频日记桌面应用，集成React 18.3.1前端与FastAPI Python后端"
+      - "基于Electron框架开发本地优先的AI视频日记桌面应用，集成React 18.2.0前端与FastAPI Python后端"
       - "实现完整视频处理流水线：上传 → AI处理 → 日报生成，支持6种日记风格（温馨/文艺/简洁/怀旧/活力/宁静）和3种长度设置"
-      - "修复数据持久化系统：实现后端 `/glass/timelines` API端点，前端历史数据自动加载，localStorage状态缓存，页面刷新数据不丢失"
-      - "核心功能：实时进度轮询、Markdown编辑器、视觉卡片展示、多格式导出、专业Figma UI设计"
-      - "技术栈：Electron, React 18.3.1, TypeScript, Vite 6.3.5, FastAPI, SQLite, FFmpeg, Tailwind CSS, 30+ Radix UI组件"
+      - "修复数据持久化系统：新增后端 `/glass/timelines` API端点，实现前端历史数据自动加载，localStorage状态缓存机制，解决页面刷新数据丢失问题"
+      - "核心功能：实时进度轮询（2秒间隔）、Markdown编辑器、视觉卡片展示、多格式导出、专业Figma UI设计"
+      - "技术栈：Electron主进程/渲染进程架构, React 18.2.0, TypeScript 5.4.5, Vite 5.4.1, FastAPI, SQLite, Framer Motion 11.11.11, Zustand 4.5.5"
     contribution: "核心开发者 | 参赛: 北大光华创新创业大赛 (进行中)"
 
   - name: ~/Genesis - Agent原生应用

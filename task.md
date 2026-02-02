@@ -1,26 +1,29 @@
 # VC Resume Rewrite - Status
 
-## 完成 ✅
-REQUIRE.md 100% 完成 + 实习经历补充
+## 当前任务 🔄
+Ref 文件夹完整信息提取 (REQUIRE.md 要求)
 
-## 最新更新 (迭代 274)
-- 从 `ref/CV 中文/main.tex` 提取实习经历
-- 新增实习经历部分 (internships)
-  - 京东探索研究院 - 算法实习生 (2025.7-至今)
-  - 桥介数物（深圳）- 强化学习工程师实习 (2024.11-2025.2)
+## 执行计划
+详见 `ref_extraction_plan.md`
+
+### 阶段进度
+- [x] 阶段 0: CV 提取 - 实习经历 ✅
+- [ ] 阶段 1: 光学脑机接口深入分析
+- [ ] 阶段 2: MineContext-Glass 深入分析
+- [ ] 阶段 3: 搜索其他遗漏信息
+- [ ] 阶段 4: 验证和整合
 
 ## 统计
-- 迭代: 274+
-- Commits: 4
-- 代码: 1932+ 行
-- 完成度: 100% + 实习经历
+- 迭代: 275
+- Commits: 5 (最新: c4c5253 - 实习经历补充)
+- 代码: 2000+ 行
 
 ## 资源
-- `_data/resume_zhcn.yml`
-- `_layouts/resume_zh_cn.html`
-- `RALPH_LOOP_ARCHIVE.md`
-- GitHub: https://github.com/QiuYi111/resume
+- `_data/resume_zhcn.yml` - 当前简历数据
+- `_layouts/resume_zh_cn.html` - 布局模板
+- `ref_extraction_plan.md` - 完整提取计划
+- `ref/` - 参考资料文件夹
 
 ---
 
-**迭代**: 274 | **状态**: ✅ 已更新 | **项目**: 补充实习经历
+**迭代**: 275 | **状态**: 🔄 执行中 | **任务**: Ref 完整信息提取

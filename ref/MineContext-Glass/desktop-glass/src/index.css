@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0)),
+    radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.18), rgba(15, 23, 42, 0));
+  overflow-x: hidden;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-brand-primary);
+  color: var(--color-text-primary);
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}

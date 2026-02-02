@@ -1,0 +1,48 @@
+On branch vibe
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    .vibe_logs/backend_api_integration.log
+	deleted:    .vibe_logs/batch_1_task_1_backend_api_fix.log
+	deleted:    .vibe_logs/batch_1_task_2_config_split.log
+	deleted:    .vibe_logs/batch_2_task_1_video_ingestion_optimization.log
+	deleted:    .vibe_logs/batch_2_task_2_frontend_state_persistence.log
+	deleted:    .vibe_logs/batch_3_task_1_data_models_unification.log
+	deleted:    .vibe_logs/batch_3_task_2_code_cleanup_utilities.log
+	deleted:    .vibe_logs/batch_4_task_1_testing_integration.log
+	deleted:    .vibe_logs/batch_4_task_2_error_handling_enhancement.log
+	deleted:    .vibe_logs/data_model_unification.log
+	deleted:    .vibe_logs/error_handling_enhancement.log
+	deleted:    .vibe_logs/integration_system.log
+	deleted:    .vibe_logs/optimize_backend_core.log
+	deleted:    .vibe_logs/optimize_config_monitoring.log
+	deleted:    .vibe_logs/optimize_desktop_frontend.log
+	deleted:    .vibe_logs/optimize_glass_pipeline.log
+	deleted:    .vibe_logs/optimize_llm_integration.log
+	deleted:    .vibe_logs/optimize_mobile_app.log
+	deleted:    .vibe_logs/state_machine_implementation.log
+	deleted:    .vibe_logs/task_1.log
+	deleted:    .vibe_logs/task_1_1.log
+	deleted:    .vibe_logs/task_1_2.log
+	deleted:    .vibe_logs/task_2.log
+	deleted:    .vibe_logs/task_3.log
+	deleted:    .vibe_logs/task_4.log
+	deleted:    .vibe_logs/task_5.log
+	deleted:    .vibe_logs/task_6.log
+	deleted:    .vibe_logs/task_7.log
+	deleted:    .vibe_logs/task_8.log
+	deleted:    .vibe_logs/testing_integration.log
+	deleted:    .vibe_logs/video_pipeline_optimization.log
+	modified:   git_status.txt
+	modified:   package.json
+	modified:   raw_context.xml
+	modified:   test_errors/timeline_state.json
+	modified:   vibe_plan.json
+	modified:   vibe_report.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	package-lock.json
+	vibe_cto_report.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
