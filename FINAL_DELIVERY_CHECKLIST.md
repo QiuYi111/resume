@@ -1,3 +1,4 @@
+---
 # 📋 最终交付清单 - REQUIRE.md 要求验证
 
 ## REQUIRE.md 要求对照表

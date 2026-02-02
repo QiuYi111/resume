@@ -1,3 +1,6 @@
+---
+---
+
 # Project Index: jekyll-minimal-resume
 
 **Generated**: 2026-02-02

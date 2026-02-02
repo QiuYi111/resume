@@ -1,3 +1,4 @@
+---
 # VC Resume Rewrite - Status
 
 ## ✅ 任务完成 - Ref 文件夹完整信息提取
