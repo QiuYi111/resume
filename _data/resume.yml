@@ -17,7 +17,7 @@ education:
   - university: 清华大学
     duration: 2022年9月 - 至今
     location: 北京市
-    major: 机械工程实验班 (专业排名前20%)
+    major: 机械工程实验班 
   - university: 荷兰代尔夫特理工大学 (交换)
     duration: 2024年8月 - 2025年2月
     location: 荷兰南荷兰省代尔夫特
@@ -35,7 +35,7 @@ skills:
   - title: 神经科学实验
     items: "光学脑机接口, 双光子钙成像"
 
-internships:
+experience:
   - name: 京东探索研究院
     duration: 2025年7月 - 至今
     role: 算法实习生
@@ -55,7 +55,7 @@ internships:
     contribution: "强化学习工程师实习 | 桥介数物（深圳）"
 
 projects:
-  - name: 光学脑机接口控制系统 (本科综合论文训练)
+  - name: 光学脑机接口控制系统 
     duration: 2025年1月 - 至今
     description:
       - "设计基于海马体目标态解码的脑机接口系统，通过双光子钙成像获取大规模神经元群体活动（30Hz采样，单细胞分辨率）"
@@ -76,10 +76,10 @@ projects:
       - "技术栈：Electron主进程/渲染进程架构, React 18.2.0, TypeScript 5.4.5, Vite 5.4.1, FastAPI, SQLite, Framer Motion 11.11.11, Zustand 4.5.5"
     contribution: "核心开发者 | 参赛: 北大光华创新创业大赛 (进行中)"
 
-  - name: ~/Genesis - Agent原生应用
-    duration: 2025年9月 - 2024年11月
+  - name: Genesis - Agentic 社会学模拟
+    duration: 2025年9月 - 2025年11月
     description:
-      - "前瞻性探索Agent原生应用范式，紧跟Moltbook等Agent-native应用风潮，体现对下一代应用形态的技术判断"
+      - "前瞻性探索Agent原生应用范式，预言Moltbook等Agent应用风潮，体现对下一代应用形态的技术判断"
       - "构建完整社会学模拟引擎：Trinity系统（行为观察、动态技能创建、事件生成）+ 智能体网络（社会结构涌现、文化记忆传承）+ 环境系统（64x64动态地形、资源供需、生态平衡）"
       - "实现从个体认知到社会演化的多层次复杂性：从石器时代到现代文明的完整发展轨迹，所有社会现象从智能体互动中自然涌现"
       - "现代化技术栈：Python 3.10+ + uv包管理 + aiohttp异步架构 + Hydra配置系统 + DeepSeek API + WebSocket实时通信"
@@ -96,7 +96,7 @@ projects:
 
 awards:
   - title: 智理杯智能体大赛三等奖
-    description: "项目：~/Genesis (Agent原生应用探索)。虽因「不像传统App」未获更高奖项，但技术实现体现了对Agent范式的前瞻性判断"
+    description: "项目：Genesis 。虽因「不像传统App」未获更高奖项，但技术实现体现了对Agent范式的前瞻性判断"
     duration: 2024年11月
   - title: 浩信校外科创奖学金
     description: "表彰校外实践丰富度与技术探索能力"
