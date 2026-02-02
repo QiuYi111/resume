@@ -1,2 +1,20 @@
 title: Résumé Title
 baseurl: "/resume/"
+exclude:
+  - 3rdParty
+  - .sass-cache
+  - .git
+  - .gitignore
+  - .claude
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - jekyll
+  - LICENSE
+  - Rakefile
+  - script
+  - screenshots
+  - port-hexo
+  - .DS_Store
+  - "*.gem"
+  - "*.gemspec"
