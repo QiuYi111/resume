@@ -111,9 +111,9 @@ awards:
     duration: 2025年
 
 mentors:
-  - name: 张元龙
-    title: 导师 / 核心团队成员
-    affiliation: 清华大学生命科学学院助理教授 | 清华大学IDG/麦戈文脑科学研究院研究员 | 清华-北大生命科学联合中心研究员
+  - name: "张元龙"
+    title: "导师 / 核心团队成员"
+    affiliation: "清华大学生命科学学院助理教授 | 清华大学IDG/麦戈文脑科学研究院研究员 | 清华-北大生命科学联合中心研究员"
     description:
       - "2025年国家级青年人才奖励计划（国家最高级别青年人才认可）"
       - "2024年清华大学优秀博士后 (Top 10/3500，全校仅10人)"
@@ -121,7 +121,7 @@ mentors:
       - "Cell (2024) 第一作者：实现跨哺乳动物器官的长期介观尺度3D细胞间动力学成像（皮层范围单细胞分辨率）"
       - "Nature Biomedical Engineering (2024) 第一作者：开发系统优化微型介观镜（SOMM），用于自由行为小鼠大规模单神经元成像"
       - "Nature Methods (2023) 共同第一作者：基于合成数据训练的宽场钙成像神经元快速检测（被引61次）"
-      - "Google Scholar总引用1,017次，h-index>10，主要研究领域：Biophotonics（生物光子学）"
+      - "Google Scholar总引用1,017次，h-index大于10，主要研究领域：Biophotonics（生物光子学）"
       - "师承：戴琼海院士（中国工程院院士）+ Alipasha Vaziri教授（洛克菲勒大学，光场显微镜开创者）"
     link: https://life.tsinghua.edu.cn/info/1035/6587.htm
 
