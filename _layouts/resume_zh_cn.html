@@ -108,6 +108,56 @@ layout: default
         </div>
       </section>
 
+      <section id="awards">
+        <div class="section-title">
+          竞赛与荣誉
+        </div>
+        <div class="section-content">
+          {% for award in site.data.resume_zhcn.awards %}
+          <div class="block">
+            <div class="block-title">
+              {{ award.title }}
+            </div>
+            <div class="block-subtitle">
+              {{ award.duration }}
+            </div>
+            <div class="block-content">
+              {{ award.description }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="mentors">
+        <div class="section-title">
+          导师与核心成员
+        </div>
+        <div class="section-content">
+          {% for mentor in site.data.resume_zhcn.mentors %}
+          <div class="block">
+            <div class="block-title">
+              {{ mentor.name }}
+            </div>
+            <div class="block-subtitle">
+              {{ mentor.title }}
+            </div>
+            <div class="block-content">
+              {{ mentor.affiliation }}<br><br>
+              <ul>
+              {% for item in mentor.description %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              </ul>
+              {% if mentor.link %}
+              <a href="{{ mentor.link }}" target="_blank">查看详情</a>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
       <section id="languages">
         <div class="section-title">
           语言
