@@ -14,48 +14,48 @@ contact:
     link: https://github.com/qiuyi111
 
 education:
-  - university: 清华大学
-    duration: 2022年9月 - 至今
-    location: 北京市
-    major: 机械工程实验班 
-  - university: 荷兰代尔夫特理工大学 (交换)
-    duration: 2024年8月 - 2025年2月
-    location: 荷兰南荷兰省代尔夫特
-    major: Mechanical Engineering
-  - university: 曲靖市第一中学
-    duration: 2019年9月 - 2022年6月
-    location: 云南省曲靖市
-    major: 高考理科710分
+  - university: "清华大学"
+    duration: "2022年9月 - 至今"
+    location: "北京市"
+    major: "机械工程实验班"
+  - university: "荷兰代尔夫特理工大学 (交换)"
+    duration: "2024年8月 - 2025年2月"
+    location: "荷兰南荷兰省代尔夫特"
+    major: "Mechanical Engineering"
+  - university: "曲靖市第一中学"
+    duration: "2019年9月 - 2022年6月"
+    location: "云南省曲靖市"
+    major: "高考理科710分"
 
 skills:
-  - title: 硬件与机械设计
+  - title: "硬件与机械设计"
     items: "AutoCAD, Fusion 360, 嵌入式开发, 有限元"
-  - title: AI与算法
+  - title: "AI与算法"
     items: "Python, C++, TensorFlow, PyTorch, CEBRA神经表示学习, 神经流形分析"
-  - title: 神经科学实验
+  - title: "神经科学实验"
     items: "光学脑机接口, 双光子钙成像"
 
 experience:
-  - title: 算法实习生
-    duration: 2025年7月 - 至今
-    company: 京东探索研究院
+  - title: "算法实习生"
+    duration: "2025年7月 - 至今"
+    company: "京东探索研究院"
     description:
       - "负责XR遥操作系统的算法研发，采用主流局域网通信架构实现低延迟控制"
       - "集成宇树机器人方案与TacAR视觉反馈方案，实现手部姿态遥操作、视频串流和视触觉传感器反馈的完整遥操作链路"
       - "解决异构系统间的数据同步问题，优化遥操作系统的实时性和精度"
 
 
-  - title: 强化学习工程师实习生
-    duration: 2024年11月 - 2025年2月
-    company: 桥介数物（深圳）
+  - title: "强化学习工程师实习生"
+    duration: "2024年11月 - 2025年2月"
+    company: "桥介数物（深圳）"
     description:
       - "复现领域前沿论文并进行迁移适配，包括PHC渐进式模仿学习和H2O Sim2Real策略等"
       - "将学术界前沿的强化学习算法迁移到公司自有双足机器人平台，完成从仿真到实物的迁移适配"
       - "解决了sim2real gap问题，优化机器人在真实环境中的步态稳定性和适应性"
 
 projects:
-  - name: 光学脑机接口控制系统 
-    duration: 2025年1月 - 至今
+  - name: "光学脑机接口控制系统"
+    duration: "2025年1月 - 至今"
     description:
       - "设计基于海马体目标态解码的脑机接口系统，通过双光子钙成像获取大规模神经元群体活动（30Hz采样，单细胞分辨率）"
       - "构建「强表示、轻读出」解码架构：使用CEBRA将高维神经活动映射至低维流形，浅层神经网络实现坐标估计，降低在线推理复杂度"
@@ -65,8 +65,8 @@ projects:
       - "引入Min-Jerk（最小跳跃）轨迹规划算法，实现生物运动模式平滑过渡，提升机械臂运动预测性和用户体验"
     contribution: "独立研究 | 导师: 张元龙助理教授 (清华大学生命科学学院)"
 
-  - name: 小忆 AI 眼镜 (MineContext Glass)
-    duration: 2025年10月 - 至今
+  - name: "小忆 AI 眼镜 (MineContext Glass)"
+    duration: "2025年10月 - 至今"
     description:
       - "基于Electron框架开发本地优先的AI视频日记桌面应用，集成React 18.2.0前端与FastAPI Python后端"
       - "实现完整视频处理流水线：上传 → AI处理 → 日报生成，支持6种日记风格（温馨/文艺/简洁/怀旧/活力/宁静）和3种长度设置"
@@ -75,8 +75,8 @@ projects:
       - "技术栈：Electron主进程/渲染进程架构, React 18.2.0, TypeScript 5.4.5, Vite 5.4.1, FastAPI, SQLite, Framer Motion 11.11.11, Zustand 4.5.5"
     contribution: "核心开发者 | 参赛: 北大光华创新创业大赛 (进行中)"
 
-  - name: Genesis - Agentic 社会学模拟
-    duration: 2025年9月 - 2025年11月
+  - name: "Genesis - Agentic 社会学模拟"
+    duration: "2025年9月 - 2025年11月"
     description:
       - "前瞻性探索Agent原生应用范式，预言Moltbook等Agent应用风潮，体现对下一代应用形态的技术判断"
       - "构建完整社会学模拟引擎：Trinity系统（行为观察、动态技能创建、事件生成）+ 智能体网络（社会结构涌现、文化记忆传承）+ 环境系统（64x64动态地形、资源供需、生态平衡）"
@@ -85,32 +85,32 @@ projects:
       - "虽因「不像传统App」未获更高奖项，但技术实现体现了对Agent范式的前瞻性理解，验证了多智能体系统涌现的可行性"
     contribution: "个人项目 | 获奖: 智理杯智能体大赛三等奖"
 
-  - name: SRT 外骨骼研究
-    duration: 2024年1月 - 2024年6月
+  - name: "SRT 外骨骼研究"
+    duration: "2024年1月 - 2024年6月"
     description:
       - "通过广泛阅读前沿学术论文，深入理解外骨骼技术发展脉络和行业痛点，识别核心矛盾：续航能力与运动能力的平衡"
       - "提出解决方案：利用AI技术采集真人步态数据训练，实现步态仿真和行动预测，优化能量效率和用户体验"
       - "率先向课题组引入AutoGPT等生成式AI工具，优化文献查阅和研究流程，提升团队工作效率"
-    contribution: 项目负责人
+    contribution: "项目负责人"
 
 awards:
-  - title: 智理杯智能体大赛三等奖
+  - title: "智理杯智能体大赛三等奖"
     description: "项目：Genesis 。虽因「不像传统App」未获更高奖项，但技术实现体现了对Agent范式的前瞻性判断"
-    duration: 2024年11月
-  - title: 浩信校外科创奖学金
+    duration: "2024年11月"
+  - title: "浩信校外科创奖学金"
     description: "表彰校外实践丰富度与技术探索能力"
-    duration: 2024年
-  - title: 清华大学「启创计划」入选者
+    duration: "2024年"
+  - title: "清华大学「启创计划」入选者"
     description: "清华大学本科生创新创业人才培养计划"
-    duration: 2025年
-  - title: 北大光华创新创业大赛参赛
+    duration: "2025年"
+  - title: "北大光华创新创业大赛参赛"
     description: "项目：小忆 AI 眼镜 (MineContext Glass)"
-    duration: 2025年
+    duration: "2025年"
 
 mentors:
-  - name: 张元龙
-    title: 导师 / 核心团队成员
-    affiliation: 清华大学生命科学学院助理教授 | 清华大学IDG/麦戈文脑科学研究院研究员 | 清华-北大生命科学联合中心研究员
+  - name: "张元龙"
+    title: "导师 / 核心团队成员"
+    affiliation: "清华大学生命科学学院助理教授 | 清华大学IDG/麦戈文脑科学研究院研究员 | 清华-北大生命科学联合中心研究员"
     description:
       - "2025年国家级青年人才奖励计划（国家最高级别青年人才认可）"
       - "2024年清华大学优秀博士后 (Top 10/3500，全校仅10人)"
@@ -123,7 +123,7 @@ mentors:
     link: https://life.tsinghua.edu.cn/info/1035/6587.htm
 
 languages:
-  - name: 普通话
-    proficiency: 母语
-  - name: 英语
-    proficiency: 托福 100+，工作熟练
+  - name: "普通话"
+    proficiency: "母语"
+  - name: "英语"
+    proficiency: "托福 100+，工作熟练"
