@@ -80,7 +80,11 @@ layout: default
               {{ exp.duration }} | {{ exp.company }}
             </div>
             <div class="block-content">
-              {{ exp.description }}
+              <ul>
+              {% for item in exp.description %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              </ul>
             </div>
           </div>
           {% endfor %}
@@ -101,7 +105,11 @@ layout: default
               {{ project.contribution }}
             </div>
             <div class="block-content">
-              {{ project.description }}
+              <ul>
+              {% for item in project.description %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              </ul>
             </div>
           </div>
           {% endfor %}
@@ -122,7 +130,11 @@ layout: default
               {{ award.duration }}
             </div>
             <div class="block-content">
-              {{ award.description }}
+              <ul>
+              {% for item in award.description %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              </ul>
             </div>
           </div>
           {% endfor %}
