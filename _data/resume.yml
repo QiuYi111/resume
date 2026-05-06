@@ -96,8 +96,8 @@ projects:
   - name: "Genesis - Agentic 社会学模拟"
     duration: "2025年9月 - 2025年11月"
     description:
-      - "**奠基性工作**：Multi-Agent Society Simulation 奠基性尝试，预见 Moltbook 等 Agent Social 应用风潮，定位为“无规则限制的社会演化实验室”"
-      - "独创 **Trinity 系统**：通过“行为观察-技能创造-事件引导”闭环逻辑，支持智能体自主演化出分工、市场及治理结构，而非硬编码规则"
+      - "**ABM尝试**：Multi-Agent Society Simulation 尝试，预见 Moltbook 等 Agent Social 应用风潮，定位为“无规则限制的社会演化实验室”"
+      - " **Trinity 系统**：通过“行为观察-技能创造-事件引导”闭环逻辑，支持智能体自主演化出分工、市场及治理结构，而非硬编码规则"
       - "验证“复杂性涌现”：实现从个体认知到社会结构（石器时代至现代文明轨迹）的自发跨越，所有社会行为皆为 Agent 互动后的涌现产物"
       - "**高性能支撑**：引入空间网格索引与 Ray 分布式异步状态机，将 O(N²) 的环境计算复杂度降至 O(N)，单回合耗时下降 39.7%"
     contribution: "个人项目 | 获奖: 智理杯智能体大赛三等奖"
